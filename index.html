@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Rose Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function checkPassword(){
+            var pass = document.getElementById("pass").value;
+
+            if(pass === "iloveu"){
+                document.getElementById("lock").style.display="none";
+                document.getElementById("main").style.display="block";
+            }else{
+                alert("Wrong password 💔 Try again");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- LOCK SCREEN -->
+<div class="container" id="lock">
+
+    <h1>🔒 Private Love Space</h1>
+
+    <p>Enter password to continue 💖</p>
+
+    <input type="password" id="pass" placeholder="Enter password">
+    <br><br>
+
+    <button onclick="checkPassword()">Unlock ❤️</button>
+
+</div>
+
+<!-- MAIN WEBSITE -->
+<div class="container" id="main" style="display:none;">
+
+    <h1>🌹 Happy Rose Day My Love 🌹</h1>
+
+    <img src="giphy.gif" class="main-gif">
+
+    <p class="intro">
+        To the most beautiful girl in my life,<br>
+        This little website is only for you ❤️
+    </p>
+
+    <img src="rose.jpg" class="photo">
+
+    <div class="buttons">
+        <a href="memories.html">Our Memories 💕</a>
+        <a href="letter.html">Love Letter 💌</a>
+    </div>
+
+</div>
+
+</body>
+</html>
